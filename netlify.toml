@@ -1,0 +1,11 @@
+[build]
+  command = ""  # Since you've already built the files
+  publish = "/"  # This will tell Netlify to deploy from the root of your dist folder
+
+[build.environment]
+  NODE_VERSION = "18.19.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
